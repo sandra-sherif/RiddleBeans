@@ -1,3 +1,4 @@
 # RiddleBeans
-Amr Nafie
-Sandra Sherif
+Amr Nafie,
+Sandra Sherif,
+Hoppa
