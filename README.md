@@ -1,7 +1,9 @@
 # RiddleBeans
-Amr Nafie,
-Sandra Sherif,
-Hoppa,
-Seif Hazem,
-Marina Andraws
-Christianne Iskandar
+
+Members | IDs
+--------------------------
+1.Amr Nafie | 28-13591
+Sandra Sherif |
+Seif Hazem |
+Marina Andraws |
+Christianne Iskandar |
