@@ -3,7 +3,7 @@
 Members | IDs
 ------- | ---
 Amr Nafie | 28-13591
-Sandra Sherif | 28-
+Sandra Sherif | 28-1967
 Marina Andraws | 28-
 Seif Hazem | 28-2369
 Christianne Iskandar | 28-3942
