@@ -1,4 +1,7 @@
 # RiddleBeans
 Amr Nafie,
 Sandra Sherif,
-Hoppa
+Hoppa,
+Seif Hazem,
+Marina Andraws
+Christianne Iskandar
