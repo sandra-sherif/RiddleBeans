@@ -7,6 +7,12 @@
   <strong>Text:</strong>
   <%= @blogpost.text %>
 </p>
+<h2>Comments</h2>
+<%= render @blogpost.comments %>
+ 
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
 
 <%= link_to 'Back', blogposts_path %>
 <%= link_to 'Edit', edit_blogpost_path(@blogpost) %>
