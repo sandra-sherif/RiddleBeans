@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+html, body {
+	font-family: "Helvetica";
+	text-align: center;
+	background: url("http://dash.ga.co/assets/jeff-bg.png");
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	
+	
+
+}

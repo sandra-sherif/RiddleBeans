@@ -1,10 +1,17 @@
 Rails.application.routes.draw do
+  devise_for :users
+  get 'welcome/index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+   root 'welcome#index'
 
+   match "/users/sign_out", via: [:get, :delete], to: "devise/sessions#destroy"
+
+   # <%= link_to "sign out", destroy_user_sessions_path, :method => :delete %> views
+ 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
