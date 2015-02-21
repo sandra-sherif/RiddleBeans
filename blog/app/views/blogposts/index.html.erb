@@ -1,5 +1,10 @@
  <h1>Listing blogposts</h1>
+
+<%if current_user.try(:admin?)%>
  <%= link_to 'New post', new_blogpost_path %>
+<%end%>
+    <%= link_to "sign out", destroy_user_session_path, :method => :delete %>
+
 <table>
   <tr>
     <th>Title</th>
@@ -11,10 +16,12 @@
       <td><%= blogpost.title %></td>
       <td><%= blogpost.text %></td>
       <td><%= link_to 'Show', blogpost_path(blogpost) %></td>
+      <%if current_user.try(:admin?)%>
       <td><%= link_to 'Edit', edit_blogpost_path(blogpost) %></td>
       <td><%= link_to 'Destroy', blogpost_path(blogpost),
               method: :delete,
               data: { confirm: 'Are you sure?' } %></td>
+              <%end%>
     </tr>
   <% end %>
 </table>
