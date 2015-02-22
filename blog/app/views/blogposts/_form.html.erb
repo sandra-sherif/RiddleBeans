@@ -1,3 +1,19 @@
+
+<style>
+
+h1 {
+  text-align: left;
+}
+textarea {
+
+  width: 500pt;
+  height: 150pt;
+
+}
+p {
+  text-align: left;
+}
+</style>
 <%= form_for @blogpost do |f| %>
  
   <% if @blogpost.errors.any? %>
@@ -13,6 +29,7 @@
       </ul>
     </div>
   <% end %>
+
  
   <p>
     <%= f.label :title %><br>

@@ -1,4 +1,18 @@
 
+<style>
+  
+h2 {
+  text-align: center;
+}
+
+
+
+
+
+</style>
+
+
+
 <%= form_for([@blogpost, @blogpost.comments.build]) do |f| %>
   <p>
     <%= f.label :user %><br>
@@ -11,4 +25,8 @@
   <p>
     <%= f.submit %>
   </p>
+  <p><%if current_user.try(:admin?)%>
+<%= link_to 'Edit', edit_blogpost_path(@blogpost) %>
+<%end%>
+</p>
 <% end %>

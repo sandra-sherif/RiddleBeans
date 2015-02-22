@@ -10,8 +10,8 @@
 </p>
 <p>
   <%if current_user.try(:admin?)%>
-  <%= link_to 'Destroy Comment', [comment.blogpost, comment],
+  <a><%= link_to 'Destroy Comment', [comment.blogpost, comment],
                method: :delete,
-               data: { confirm: 'Are you sure?' } %>
+               data: { confirm: 'Are you sure?' } %></a>
   <%end%>
 </p>

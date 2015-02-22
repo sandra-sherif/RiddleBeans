@@ -1,10 +1,57 @@
- <h1>Listing blogposts</h1>
+<!DOCTYPE html>
+  <style>
+    
+    body{
+      background-color: rgb(225,225,225);
+      }
 
+      h1 {
+        font-family: playfair display;
+        font-size: 17pt;
+        font-weight: bold;
+        color: #E30613;
+        text-align: center;
+    }
 
-<%if current_user.try(:admin?)%>
- <%= link_to 'New post', new_blogpost_path %>
-<%end%>
-    <%= link_to "sign out", destroy_user_session_path, :method => :delete %>
+    th {
+        color: black;
+      text-align: center;
+      font-family: alegreya;
+      font-weight: none;
+      text-decoration: none;
+      width: 90pt;
+      font-size: 13.5pt;
+
+    }
+
+    a {
+      color: black;
+      text-align: center;
+      font-family: alegreya;
+      font-weight: none;
+      text-decoration: none;
+      display: block;
+      width: 90pt;
+      font-size: 13.5pt;
+    }
+
+    a:hover {
+        color: #E30613;
+        background-color: none;
+      }
+
+  </style>
+
+<body>
+
+  <h1>Our Blogposts</h1> <br></br>
+  <%if current_user.try(:admin?)%>
+  <a><%= link_to '~ New Post', new_blogpost_path %></a><br></br>
+  
+  <%end%>
+
+</body>
+
 
 <table>
   <tr>
@@ -14,7 +61,7 @@
  
   <% @blogposts.each do |blogpost| %>
     <tr>
-      <td><%= blogpost.title %></td>
+      <td><%= blogpost.title %></td> 
       <td><%= blogpost.text %></td>
       <td><%= link_to 'Show', blogpost_path(blogpost) %></td>
       <%if current_user.try(:admin?)%>
