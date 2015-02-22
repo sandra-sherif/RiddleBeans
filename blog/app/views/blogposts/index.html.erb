@@ -1,5 +1,6 @@
  <h1>Listing blogposts</h1>
 
+
 <%if current_user.try(:admin?)%>
  <%= link_to 'New post', new_blogpost_path %>
 <%end%>
