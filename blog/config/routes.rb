@@ -9,7 +9,8 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'welcome#index' 
+      root 'welcome#index' 
+   
 
    match "/users/sign_out", via: [:get, :delete], to: "devise/sessions#destroy"
 

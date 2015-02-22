@@ -1,13 +1,32 @@
+<style>
+  h2 {
+    text-align: center;
+    font-family: helvetica;
+    color: #E30613;
+
+
+  }
+
+  div {
+    text-align: center justify;
+    vertical-align: center justify;
+    font-family: helvetica;
+    color: #E30613;
+
+  }
+
+</style>
+
 <h2>Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.label :email %><br></br>
+    <%= f.email_field :email, autofocus: true %><br></br>
   </div>
 
   <div class="field">
-    <%= f.label :password %><br />
+    <%= f.label :password %><br></br>
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
